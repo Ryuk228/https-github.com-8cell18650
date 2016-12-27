@@ -54,11 +54,11 @@ void loop() {
   
   for (int i = 0; i < NUM_BATTS; i++)
   {
-    int battVolt = (analogRead(highPins[i]) * voltRef) / 1024.0;
+    float battVolt = (analogRead(highPins[i]) * voltRef) / 1024.0;
  
   
   
-    int shuntVolt = analogRead(lowPins[i]) * voltRef / 1024.0;
+    float shuntVolt = analogRead(lowPins[i]) * voltRef / 1024.0;
    
   if(battVolt >= battLow && finished == false)
   {
