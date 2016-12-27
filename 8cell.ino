@@ -2,10 +2,12 @@
 
 #define NUM_BATTS 8 // The number of batteries.
 
-int gatePins[NUM_BATTS] = {10,10,10, 1, 10, 10, 10, 10};
+int gatePins[NUM_BATTS] = {12, 11, 10, 9, 8, 7, 6, 5};
 int highPins[NUM_BATTS] = {A0, A2, A4, A6, A8, A10, A12, A13};
 int lowPins[NUM_BATTS] = {A1, A3, A5, A7, A9, A11, A13, A14};
 
+
+int ledPins[NUM_LEDS] = {24, 26, 28, 30, 32, 34, 36, 38
 // statusLED
 /*
 #define 1led
