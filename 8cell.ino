@@ -39,8 +39,8 @@ unsigned long millisPassed = 0;
 void setup() {
  
   Serial.begin(9600);
-  Serial.println("Battery Capacity Checker v1.1");
-  Serial.println("battVolt   current     mAh");
+ // Serial.println("Battery Capacity Checker v1.1");
+ // Serial.println("battVolt   current     mAh");
  
   for (int i = 0; i < NUM_BATTS; i++)
   {
@@ -72,11 +72,11 @@ void loop() {
  
 
        
-      Serial.print(battVolt);
-      Serial.print("\t");
-      Serial.print(current);
-      Serial.print("\t");
-      Serial.println(mAh);
+    //  Serial.print(battVolt);
+    //  Serial.print("\t");
+     // Serial.print(current);
+     // Serial.print("\t");
+    //  Serial.println(mAh);
        
       delay(interval);
   }
